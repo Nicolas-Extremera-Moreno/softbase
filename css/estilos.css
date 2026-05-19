@@ -271,26 +271,55 @@ footer a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-.contenedor-principal {
-  padding: 15px 20px;
-}
 
-  .superior-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* PRIMER CONTENEDOR */
+  .contenedor-principal {
+    padding: 15px 20px;
   }
 
-  .tarjetas-servicios {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
+  .superior-principal {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .superior-principal nav ul {
+    flex-direction: column;
     gap: 10px;
   }
 
+  .inferior-principal h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .inferior-principal p {
+    text-align: center;
+  }
+
+  /* SEGUNDO CONTENEDOR */
+  main {
+    padding: 20px;
+  }
+
+  .tarjetas-servicios {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .tarjetas img {
+    max-width: 90%;
+  }
+
+  /* TERCER CONTENEDOR */
   .info {
+    grid-template-columns: 1fr;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .info-tarjeta {
+    padding: 30px;
   }
 
   form {
@@ -301,10 +330,11 @@ footer a:hover {
     width: 100%;
   }
 
+  /* PIE DE PÁGINA */
   footer {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    gap: 10px;
   }
 }
+
